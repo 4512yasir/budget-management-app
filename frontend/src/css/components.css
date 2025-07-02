@@ -1,0 +1,86 @@
+/* ====== Navbar Styles ====== */
+.navbar {
+    width: 100%;
+    background-color: #1e3a8a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #93c5fd;
+}
+
+/* ====== Sidebar Styles ====== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #1e3a8a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #f3f4f6;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #2563eb;
+    transform: translateX(5px);
+}
+
+.sidebar button {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    background-color: #ef4444;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar button:hover {
+    background-color: #dc2626;
+    transform: scale(1.05);
+}
